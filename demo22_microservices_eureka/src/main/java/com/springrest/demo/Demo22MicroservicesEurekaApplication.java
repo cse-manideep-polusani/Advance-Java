@@ -2,14 +2,14 @@ package com.springrest.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@EnableCaching
-public class Demo19SpringrestApplication {
+@EnableEurekaServer
+public class Demo22MicroservicesEurekaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Demo19SpringrestApplication.class, args);
+		SpringApplication.run(Demo22MicroservicesEurekaApplication.class, args);
 	}
 
 }

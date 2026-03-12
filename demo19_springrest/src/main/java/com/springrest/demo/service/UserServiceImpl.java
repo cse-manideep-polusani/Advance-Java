@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService {
     @Override
     @Cacheable(value = "users", key = "#id")
     public UserResponseDTO getUserById(Long id) {
+    	System.out.println("Fetching user from DATABASE...");
         User user = repository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
         return mapper.toDTO(user);

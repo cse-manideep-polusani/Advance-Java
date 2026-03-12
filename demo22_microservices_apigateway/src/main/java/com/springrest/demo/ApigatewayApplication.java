@@ -2,14 +2,14 @@ package com.springrest.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableCaching
-public class Demo19SpringrestApplication {
+@EnableDiscoveryClient
+public class ApigatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Demo19SpringrestApplication.class, args);
+		SpringApplication.run(ApigatewayApplication.class, args);
 	}
 
 }
